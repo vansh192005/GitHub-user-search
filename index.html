@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+    <title>Github User Search</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h3>devfinder</h3>
+            <div class="theme-section">
+                <p>LIGHT</p>
+                <img src="icon-sun.svg" alt="theme" id="theme-icon" />
+            </div>
+        </header>
+
+        <section>
+            <div class="input-container">
+                <i class="fa-solid fa-magnifying-glass" style="color: #74c0fc"></i>
+                <input type="text" name="search" placeholder="Search GitHub username..." />
+            </div>
+            <button>Search</button>
+        </section>
+
+        <div class="card">
+            <div class="icon-section">
+                <img id="avatar">
+            </div>
+            <div class="info-section">
+                <div class="heading">
+                    <h2 id="name"></h2>
+                    <p id="joiningDate"></p>
+                </div>
+                <div class="bio">
+                    <p id="bio"></p>
+                </div>
+                <div class="count">
+                    <div class="item">
+                        <p>Repos</p>
+                        <h4 id="repos"></h4>
+                    </div>
+                    <div class="item">
+                        <p>Followers</p>
+                        <h4 id="followers"></h4>
+                    </div>
+                    <div class="item">
+                        <p>Following</p>
+                        <h4 id="following"></h4>
+                    </div>
+                </div>
+
+                <div class="basic">
+                    <div class="social">
+                        <div id="location">
+                            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                            <p id="loc"></p>
+                        </div>
+                        <div id="twitter">
+                            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                            <a id="twitterLink" href="" target="_blank">@twitter</a>
+                        </div>
+                    </div>
+    
+                    <div class="links">
+                        <div id="bloglink">
+                            <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                            <a id="blog" href="" target="_blank">@blog</a>
+                        </div>
+                        <div id="git">
+                            <i class="fa-solid fa-building" style="color: #ffffff;"></i>
+                            <a id="gitLink" href="" target="_blank">@github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
